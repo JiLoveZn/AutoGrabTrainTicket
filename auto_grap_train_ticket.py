@@ -78,12 +78,12 @@ class Booking(object):
             print('选择乘车人、席别：')
             for pasger in self.passenger:
                 self.browser.find_by_text(pasger).last.click()
-            if pasger[-1] == ')':
-                self.browser.find_by_id('dialog_xsertcj_ok').click()
-                #sleep(0.1)
-                #self.browser.find_by_text(self.seat).last.click()
-                sleep(0.3)
-                print('提交订单！')
+            	if pasger[-1] == ')':
+                	self.browser.find_by_id('dialog_xsertcj_ok').click()
+                	#sleep(0.1)
+                	#self.browser.find_by_text(self.seat).last.click()
+                	sleep(0.3)
+            print('提交订单！')
             self.browser.find_by_id('submitOrder_id').click()
             sleep(0.5)
             print('确认')
