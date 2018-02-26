@@ -1,2 +1,2 @@
 # AutoGrabTrainTicket
-A Web0 Automate test scripts
+A Web Automate test scripts
